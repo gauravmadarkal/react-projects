@@ -1,3 +1,9 @@
+This is a Personal portfolio website which is built with react
+It makes use of react component struture
+
+Developed by Gaurav Madarkal
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
