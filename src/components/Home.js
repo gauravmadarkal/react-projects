@@ -19,12 +19,20 @@ class Home extends React.Component{
         return(
           this.state.hidden ? <div id = "animation" class="shapeshifter play"></div> :
             <main role="main" class="inner cover">
+            <div class="row">
+            <img class="hero-image" src={require("../assets/img/hero_image.svg")}></img>
+              <div class="column">
             <h1 class="cover-heading greetings">Hi</h1><h1 class="name">I'm Deepthi.</h1>
             <p class="lead self-description">Professional architect. Take a peek at my work, you want me to do anything for you? Hit me up!!</p>
             <p class="lead">
               <a href="#" class="btn btn-lg btn-secondary learnmore-button">Learn more</a>
             </p>
+            </div>
+            
+            
+            </div>
             <Footer/>
+            
           </main>
         );
     }

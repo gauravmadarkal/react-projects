@@ -16,6 +16,7 @@ class ResponsiveNav extends React.Component{
                 <li class="nav-item"><Link class="nav-link-items" to="/">Home</Link></li>
                 <li class="nav-item"><Link class="nav-link-items" to="/about">About</Link></li>
                 <li class="nav-item"><Link class="nav-link-items" to="/projects">Projects</Link></li>
+                <li class="nav-item"><Link class="nav-link-items" to="/uses">Uses</Link></li>
                 <li class="nav-item"><Link class="nav-link-items" to="/contact">Contact</Link></li>
                 </ul>
             </div>

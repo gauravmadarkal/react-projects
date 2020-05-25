@@ -24,12 +24,12 @@ class App extends React.Component{
   }
   changeActiveElement(event){
     const {id} = event.target;
-    var ids = ["nav-about","nav-projects","nav-contact","nav-home"];
+    var ids = ["nav-about","nav-projects","nav-contact","nav-home","nav-uses"];
     ids.forEach(function(item){ 
       if(item === id){
         document.getElementById(item).style.borderBottomColor = "#880e4f";
       }else{
-        document.getElementById(item).style.borderBottomColor = "#e0e0e0";
+        document.getElementById(item).style.borderBottomColor = "#fafafa";
       }
     });
   }
@@ -37,14 +37,14 @@ class App extends React.Component{
     console.log("clicked burger");
     var x = document.getElementById("navbarContent");
     if (x.className === "navbar-nav collapse") {
-        x.className += " show";
+        x.className += " show fade-in";
     } else {
         x.className = "navbar-nav collapse";
     }
   }
   checkUrl(){
     console.log(window.location.href);
-    var ids = ["nav-about","nav-projects","nav-contact","nav-home"];
+    var ids = ["nav-about","nav-projects","nav-contact","nav-home","nav-uses"];
     var strings = window.location.href.split("/");
     var id = "nav-" + strings[strings.length - 1];
     if(id === "nav-"){
@@ -59,7 +59,7 @@ class App extends React.Component{
           }
         }else{
           try{
-            document.getElementById(item).style.borderBottomColor = "#e0e0e0";
+            document.getElementById(item).style.borderBottomColor = "#fafafa";
           }catch{
           }
         }
@@ -82,6 +82,7 @@ class App extends React.Component{
                     <Link style={{ textDecoration: 'none', paddingLeft: '20px' }} to="/" ><a class="nav-link active nav-bar-items" id = "nav-home" onClick={this.onClick}>Home</a></Link>
                     <Link style={{ textDecoration: 'none', paddingLeft: '20px' }} to="/about"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-about">About</a></Link>
                     <Link style={{ textDecoration: 'none', paddingLeft: '20px' }} to="/projects"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-projects">Projects</a></Link>
+                    <Link style={{ textDecoration: 'none', paddingLeft: '20px' }} to="/uses"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-uses">Uses</a></Link>
                     <Link style={{ textDecoration: 'none', paddingLeft: '20px' }} to="/contact"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-contact">Contact</a></Link>
                     <a class="burger" onClick={this.responsiveBurgerIcon}>
                         <i class="fa fa-align-left fa-2x"></i>

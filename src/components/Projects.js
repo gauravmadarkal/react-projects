@@ -9,7 +9,7 @@ const projects = [
   {
     id : 1,
     title : "First Project",
-    imageName : "3.png",
+    imageName : "1.jpg",
     description : "lorem ipsum dolor sit amet"
   },
   {
@@ -20,14 +20,14 @@ const projects = [
   },
   {
     id : 3,
-    title : "third Project",
-    imageName : "1.png",
+    title : "Third Project",
+    imageName : "3.jpg",
     description : "lorem ipsum dolor sit amet"
   },
   {
     id : 4,
-    title : "fourth Project",
-    imageName : "2.jpg",
+    title : "Fourth Project",
+    imageName : "4.jpg",
     description : "lorem ipsum dolor sit amet"
   }
 ]
