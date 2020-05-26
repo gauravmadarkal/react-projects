@@ -41,7 +41,7 @@ a.nav-bar-items:hover{
   border: .05rem solid var(--main-element-color);
 }
 .detailed-description{
-  font-size: 20px;
+  font-size: 18px;
   background-color: #ede7f6 !important;
   border-radius: 20px;
   padding: 10px 10px 10px 10px !important;
@@ -59,7 +59,7 @@ a.nav-bar-items:hover{
   .detailed-description{
     padding: 10px 0px 10px 0px;
     text-align: left;
-    margin:  10px 10px 10px 10px !important;
+    margin: 10px 0px 10px 0px !important;
   }
   .aboutme-buttons{
     margin-left: 10px;
