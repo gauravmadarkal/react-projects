@@ -1,7 +1,4 @@
-function responsiveBurgerIcon(shouldHide) {
-    if(shouldHide != null){
-        console.log("yae");
-    }
+function responsiveBurgerIcon() {
     var x = document.getElementById("navbarContent");
     if (x.className === "navbar-nav collapse") {
         x.className += " show fade-in";
