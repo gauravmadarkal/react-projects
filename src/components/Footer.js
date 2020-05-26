@@ -17,9 +17,16 @@ class Footer extends React.Component{
         return(
             this.state.hidden ? <div id = "animation" class="shapeshifter play"></div> :
             // <footer class="mastfoot mt-auto">
-            <footer class="footer">
+            <footer class="footer" style={{paddingTop:"0px"}}>
                 <div class="inner">
                 <p>
+                {this.props.showAddress?
+                    <div class="footer-information row">
+                        <img class="address-flag-icon" src = {require("../assets/img/flag.png")}></img>
+                        <p class="my-address">Bangalore, KA <br />
+                            560076, IN</p></div>:
+                    <p></p>    
+                }
                 <a class="footerIcons" href="#"><i class="fa fa-instagram fa-3x" ></i></a>
                 <a class="footerIcons" href="#"><i class="fa fa-facebook fa-3x"></i></a>
                 <a class="footerIcons" href="#"><i class="fa fa-twitter fa-3x"></i></a>

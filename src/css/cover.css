@@ -118,6 +118,7 @@ body {
   padding-top: 50px;
   bottom: 0;
   height: 50px;
+  width: 50%;
   left: 10px;
    /* left: 10px;  */
    font-family: sans-serif; 
@@ -125,6 +126,24 @@ body {
    /* overflow : hidden !important;  */
 }
 
+@media screen and (max-width: 600px) {
+  .footer{
+    width: 100%;
+  }
+  .inner{
+    padding: 0px 10px 10px 10px;
+  }
+}
+.my-address{
+  padding: 10px 10px 0px 10px;
+}
+.address-flag-icon{
+  width: 20px;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+}
 h1.cover-heading.greetings{
     margin-top: 90px;
     top: 0;
@@ -140,6 +159,31 @@ a.footerIcons{
   padding: 5px;
   margin-left: 20px;
 }
+.background-contact{
+  background-color: #ede7f6 !important;
+  border-radius: 20px;
+  padding: 10px 20px 10px 5px !important;
+}
+@media screen and (max-width: 600px) {
+  .background-contact .column{
+    margin-top: 20px;
+  }
+}
+.formInput{
+  padding-top: 20px 20px 0px 10px !important;
+}
+.MuiFormControl-fullWidth {
+  margin-top: 10px;
+  padding: 10px 20px 10px 10px;
+}
+
+.contact-column{
+  width: 100%;
+  padding: 5px;
+}
+/* .footer-information{
+  /* margin-top: 5px !important; */
+/* } */
 .hero-image{
   width: 50%;
   vertical-align: middle;
@@ -149,6 +193,11 @@ a.footerIcons{
     width: 90%;
     padding-left: 40px;
   }
+}
+.align-center{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 10px;
 }
 .row::after {
   content: "";
