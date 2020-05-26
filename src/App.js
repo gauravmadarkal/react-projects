@@ -8,6 +8,7 @@ import Loader from './components/Loader';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import responsiveBurgerIcon from './components/Burger'
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,17 +34,8 @@ class App extends React.Component{
       }
     });
   }
-  responsiveBurgerIcon() {
-    console.log("clicked burger");
-    var x = document.getElementById("navbarContent");
-    if (x.className === "navbar-nav collapse") {
-        x.className += " show fade-in";
-    } else {
-        x.className = "navbar-nav collapse";
-    }
-  }
+  
   checkUrl(){
-    console.log(window.location.href);
     var ids = ["nav-about","nav-projects","nav-contact","nav-home","nav-uses"];
     var strings = window.location.href.split("/");
     var id = "nav-" + strings[strings.length - 1];
@@ -52,7 +44,6 @@ class App extends React.Component{
     }else{
       ids.forEach(function(item){ 
         if(item === id){
-          console.log("clicked: "+item);
           try{
             document.getElementById(item).style.borderBottomColor = "#880e4f";
           }catch{
@@ -84,7 +75,7 @@ class App extends React.Component{
                     <Link style={{ textDecoration: 'none', paddingLeft: '20px' }} to="/projects"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-projects">Projects</a></Link>
                     <Link style={{ textDecoration: 'none', paddingLeft: '20px' }} to="/uses"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-uses">Uses</a></Link>
                     <Link style={{ textDecoration: 'none', paddingLeft: '20px' }} to="/contact"><a class="nav-link nav-bar-items" onClick={this.onClick} id = "nav-contact">Contact</a></Link>
-                    <a class="burger" onClick={this.responsiveBurgerIcon}>
+                    <a class="burger" onClick={responsiveBurgerIcon(false)}>
                         <i class="fa fa-align-left fa-2x"></i>
                     </a> 
                     <ResponsiveNav /> 

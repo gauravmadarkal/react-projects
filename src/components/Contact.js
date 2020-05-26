@@ -76,8 +76,7 @@ class Contact extends React.Component{
       reply_to : this.state.email,
       subject : this.state.subject,
       message_html : this.state.message
-    }
-    console.log(document.getElementById("sender_name"))
+    }   
     window.emailjs.send(
       'gmail', template_id,
       template_params
