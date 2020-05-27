@@ -11,4 +11,4 @@ function MyCard(projectDetails){
         </div>
         );
 }
-export default (MyCard);
+export default (MyCard);    
